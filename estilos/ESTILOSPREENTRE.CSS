@@ -1,0 +1,245 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #060606;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-top: 15px double white;
+    border-bottom: 15px double white;
+    transition: height 0.3s; /* Transición para la altura */
+    text-align: center; /* Centrar texto en el header */
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 10%; 
+        padding: 5px 20px;
+    }
+}
+
+.logo img {
+    height: 100px; /* Ajustar tamaño del logo */
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    text-align: center; /* Centrar texto en el contenido principal */
+}
+
+.izq,
+.der {
+    width: 50%;
+    text-align: center; 
+}
+
+.izq img,
+.der img {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.historia {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.Servicios
+ {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #060606;
+}
+
+/* Galería de productos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Centrar productos */
+}
+
+.producto {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.agregar-carrito {
+    background-color: #cf7b1b;
+    color: rgb(19, 19, 19);
+    border: #333;
+    border-radius:  10px; ;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #090909;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes-sociales a {
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #050505;
+    text-decoration: none;
+}
+
+/* Tabla de carrito */
+#carrito table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#carrito th,
+#carrito td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#carrito th {
+    background-color: #f2f2f2;
+}
+
+#carrito button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #671515;
+}
+
+/* Estilos adicionales */
+.borde {
+    border-top: 10px double black;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 10px; /* Reducir el espacio interno */
+        position: fixed;
+    }
+
+    .logo img {
+        height: 80px; /* Reducir tamaño del logo */
+        width: auto;
+        padding-left: 20px; /* Espacio alrededor del logo */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Alinear el menú debajo del header */
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center; /* Centrar elementos */
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999; /* Colocar por encima del contenido */
+    }
+
+    nav ul.active {
+        transform: translateY(0); /* Mostrar el menú */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Eliminar el margen derecho */
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+
+    nav ul li a {
+        padding: 10px 20px; /* Espaciado del enlace */
+        display: block; /* Mostrar como bloque para ocupar todo el ancho */
+        color: white;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón */
+    }
+}
+
+h2
+{
+    text-align: center;
+}

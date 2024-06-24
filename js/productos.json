@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "Camiseta New York",
+        "precio": 48000,
+        "imagen": "nyc.jpg"
+    },
+    {
+        "nombre": "Camiseta Brooklyn",
+        "precio": 48000,
+        "imagen": "brooklyn.jpg"
+    },
+    {
+        "nombre": "Camiseta California",
+        "precio": 48000,
+        "imagen": "california.jpg"
+    },
+    {
+        "nombre": "Camiseta Hard",
+        "precio": 48000,
+        "imagen": "hard.jpg"
+    },
+    {
+        "nombre": "Camiseta Gamer",
+        "precio": 48000,
+        "imagen": "gamer.jpg"
+    }
+]
