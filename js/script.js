@@ -147,4 +147,4 @@ function actualizarResumenCarrito() {
     document.getElementById('total-resumen').textContent = `$${calcularTotalConIVA(subtotal)}`;
 }
 
-// CSS y otros elementos del proyecto se mantienen sin cambios
+
